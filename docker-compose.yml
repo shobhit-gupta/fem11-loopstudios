@@ -1,0 +1,19 @@
+services:
+  loopstudios-landing-page:
+    build: ./
+    stdin_open: true
+    tty: true
+    container_name: loopstudios-landing-page-app
+    ports:
+      - '10010:4173'
+      - '11010:5173'
+    volumes:
+      - ./:/app
+      - loopstudios-landing-page-nm:/app/node_modules
+volumes:
+  loopstudios-landing-page-nm:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./node_modules

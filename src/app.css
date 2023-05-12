@@ -6,4 +6,7 @@
 	body {
 		@apply font-sans text-[15px];
 	}
+	section {
+		@apply mx-auto mt-24 max-w-6xl px-6 md:mt-[184px];
+	}
 }

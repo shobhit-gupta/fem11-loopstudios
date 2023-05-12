@@ -74,7 +74,7 @@
 			>
 				<nav
 					class="
-					flex
+						flex
 						h-full
 						w-96
 						flex-row
@@ -95,14 +95,11 @@
 		<!-- Page Heading -->
 		<h1
 			class="
+				page-title
 				max-w-[650px]
 				border-2
 				border-white
 				p-6
-				font-display
-				text-[40px]
-				font-light
-				uppercase
 				text-white
 				md:p-10
 				md:text-7xl
@@ -152,18 +149,7 @@
 				lg:pt-24
 			"
 		>
-			<h2
-				class="
-					font-display
-					text-[32px]
-					font-light
-					uppercase
-					leading-tight
-					lg:text-5xl
-				"
-			>
-				The leader in interactive VR
-			</h2>
+			<h2 class="section-title">The leader in interactive VR</h2>
 			<p
 				class="
 					mt-4

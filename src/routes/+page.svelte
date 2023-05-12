@@ -74,7 +74,7 @@
 			>
 				<nav
 					class="
-					flex
+						flex
 						h-full
 						w-96
 						flex-row
@@ -95,15 +95,12 @@
 		<!-- Page Heading -->
 		<h1
 			class="
+				page-title
 				max-w-[650px]
 				border-2
-			border-white
+				border-white
 				p-6
-				font-display
-				text-[40px]
-				font-light
-				uppercase
-			text-white
+				text-white
 				md:p-10
 				md:text-7xl
 			"
@@ -113,12 +110,60 @@
 	</div>
 </header>
 
-<!-- The leader in interactive VR -->
-
-<!-- Founded in 2011, Loopstudios has been producing world-class virtual reality  -->
-<!-- projects for some of the best companies around the globe. Our award-winning  -->
-<!-- creations have transformed businesses through digital experiences that bind  -->
-<!-- to their brand. -->
+<section>
+	<div
+		class="
+			grid
+			grid-cols-1
+			items-center
+			gap-12
+			md:grid-cols-[7fr_2fr_5fr]
+			md:grid-rows-1
+			md:items-end
+			md:gap-0
+		"
+	>
+		<img
+			src="/images/mobile/image-interactive.jpg"
+			alt=""
+			class="
+				w-full
+				bg-black
+				md:col-start-1
+				md:col-end-3
+				md:row-start-1
+			"
+		/>
+		<div
+			class="
+				bg-white
+				px-6
+				text-center
+				md:col-start-2
+				md:col-end-4
+				md:row-start-1
+				md:pl-8
+				md:pt-8
+				md:text-left
+				lg:pl-24
+				lg:pt-24
+			"
+		>
+			<h2 class="section-title">The leader in interactive VR</h2>
+			<p
+				class="
+					mt-4
+					text-darkGray
+					md:mt-6
+				"
+			>
+				Founded in 2011, Loopstudios has been producing world-class virtual reality projects for
+				some of the best companies around the globe. Our award-winning creations have transformed
+				businesses through digital experiences that bind to their brand.
+			</p>
+		</div>
+	</div>
+</section>
 
 <!-- Our creations -->
 

@@ -1,3 +1,40 @@
+<script>
+	const portfolio = [
+		{
+			title: 'Deep Earth',
+			image: 'deep-earth'
+		},
+		{
+			title: 'Night Arcade',
+			image: 'night-arcade'
+		},
+		{
+			title: 'Soccer Team VR',
+			image: 'soccer-team'
+		},
+		{
+			title: 'The grid',
+			image: 'grid'
+		},
+		{
+			title: 'From Up Above VR',
+			image: 'from-above'
+		},
+		{
+			title: 'Pocket Borealis',
+			image: 'pocket-borealis'
+		},
+		{
+			title: 'The Curiosity',
+			image: 'curiosity'
+		},
+		{
+			title: 'Make it Fisheye',
+			image: 'fisheye'
+		}
+	];
+</script>
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -163,6 +200,57 @@
 			</p>
 		</div>
 	</div>
+</section>
+
+<section
+	class="
+		grid
+		grid-cols-1
+		gap-6
+		md:grid-cols-4
+		md:gap-[30px]
+	"
+>
+	<h2
+		class="
+			section-title
+			mb-6
+			text-center
+			md:col-span-3
+			md:text-left
+		"
+	>
+		Our Creations
+	</h2>
+
+	{#each portfolio as { title, image }}
+		<picture class="order-2 md:order-3">
+			<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
+			<img src="/images/mobile/image-{image}.jpg" alt="" />
+		</picture>
+	{/each}
+
+	<button
+		class="
+			order-3
+			mt-2.5
+			max-w-fit
+			justify-self-center
+			border
+			border-veryDarkGray
+			px-10
+			py-3
+			text-sm
+			uppercase
+			tracking-[5px]
+			md:order-2
+			md:mb-11
+			md:mt-1
+			md:justify-self-end
+		"
+	>
+		See All
+	</button>
 </section>
 
 <!-- Our creations -->

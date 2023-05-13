@@ -13,9 +13,12 @@
 
 @layer components {
 	.page-title {
-		@apply font-display text-[40px] font-light uppercase;
+		@apply font-display text-[40px] font-light uppercase md:text-7xl;
 	}
 	.section-title {
 		@apply font-display text-[32px] font-light uppercase leading-tight lg:text-5xl;
+	}
+	.project-title {
+		@apply font-display text-2xl font-light uppercase leading-tight lg:text-[32px];
 	}
 }

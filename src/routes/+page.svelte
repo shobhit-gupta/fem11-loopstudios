@@ -1,35 +1,35 @@
 <script>
 	const portfolio = [
 		{
-			title: 'Deep Earth',
+			title: 'Deep\nEarth',
 			image: 'deep-earth'
 		},
 		{
-			title: 'Night Arcade',
+			title: 'Night\nArcade',
 			image: 'night-arcade'
 		},
 		{
-			title: 'Soccer Team VR',
+			title: 'Soccer\nTeam VR',
 			image: 'soccer-team'
 		},
 		{
-			title: 'The grid',
+			title: 'The\ngrid',
 			image: 'grid'
 		},
 		{
-			title: 'From Up Above VR',
+			title: 'From Up\nAbove VR',
 			image: 'from-above'
 		},
 		{
-			title: 'Pocket Borealis',
+			title: 'Pocket\nBorealis',
 			image: 'pocket-borealis'
 		},
 		{
-			title: 'The Curiosity',
+			title: 'The\nCuriosity',
 			image: 'curiosity'
 		},
 		{
-			title: 'Make it Fisheye',
+			title: 'Make it\nFisheye',
 			image: 'fisheye'
 		}
 	];
@@ -139,7 +139,6 @@
 				p-6
 				text-white
 				md:p-10
-				md:text-7xl
 			"
 		>
 			Immersive experiences that deliver
@@ -224,10 +223,44 @@
 	</h2>
 
 	{#each portfolio as { title, image }}
-		<picture class="order-2 md:order-3">
-			<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
-			<img src="/images/mobile/image-{image}.jpg" alt="" />
-		</picture>
+		<div class="relative order-2 md:order-3">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
+				<img src="/images/mobile/image-{image}.jpg" alt="" class="w-full" />
+			</picture>
+			<!-- Translucent overlay -->
+			<div
+				class="
+					absolute
+					bottom-0
+					left-0
+					right-0
+					top-0
+					z-0
+					bg-gradient-to-b
+					from-black/0
+					to-black/60
+				"
+			/>
+			<h3
+				class="
+					project-title
+					max-w-
+					absolute
+					bottom-0
+					left-0
+					right-0
+					whitespace-pre
+					px-5
+					py-5
+					text-white
+					md:py-8
+					lg:pl-10
+				"
+			>
+				{title}
+			</h3>
+		</div>
 	{/each}
 
 	<button
@@ -252,19 +285,6 @@
 		See All
 	</button>
 </section>
-
-<!-- Our creations -->
-
-<!-- See all -->
-
-<!-- Deep earth -->
-<!-- Night arcade -->
-<!-- Soccer team VR -->
-<!-- The grid -->
-<!-- From up above VR -->
-<!-- Pocket borealis -->
-<!-- The curiosity -->
-<!-- Make it fisheye -->
 
 <!-- About -->
 <!-- Careers -->

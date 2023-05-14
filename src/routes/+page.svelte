@@ -271,10 +271,74 @@
 	</button>
 </section>
 
-<!-- About -->
-<!-- Careers -->
-<!-- Events -->
-<!-- Products -->
-<!-- Support -->
-
-<!-- © 2021 Loopstudios. All rights reserved. -->
+<footer
+	class="
+		bg-black
+		py-14
+		md:py-11
+	"
+>
+	<div
+		class="
+			flex
+			flex-col
+			items-center
+			justify-between
+			gap-12
+			text-white
+			md:flex-row
+		"
+	>
+		<!-- Navigation -->
+		<div
+			class="
+				flex
+				flex-col
+				items-center
+				gap-8
+				md:items-start
+				md:gap-6
+			"
+		>
+			<img
+				src="/images/logo.svg"
+				alt=""
+				class="
+					w-36
+					grow-0
+				"
+			/>
+			<div class="">
+				<nav
+					class="
+						flex
+						h-full
+						flex-col
+						items-center
+						gap-4
+						leading-relaxed
+						text-white
+						md:w-96
+						md:flex-row
+						md:gap-8
+					"
+				>
+					<a href="/">About</a>
+					<a href="/">Careers</a>
+					<a href="/">Events</a>
+					<a href="/">Products</a>
+					<a href="/">Support</a>
+				</nav>
+			</div>
+		</div>
+		<div class="flex flex-col items-center gap-4 md:items-end md:gap-6">
+			<div class="flex space-x-4">
+				<img src="/images/icon-facebook.svg" alt="" />
+				<img src="/images/icon-twitter.svg" alt="" />
+				<img src="/images/icon-pinterest.svg" alt="" />
+				<img src="/images/icon-instagram.svg" alt="" />
+			</div>
+			<p class="text-darkGray">© 2021 Loopstudios. All rights reserved.</p>
+		</div>
+	</div>
+</footer>

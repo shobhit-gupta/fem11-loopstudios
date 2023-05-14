@@ -12,6 +12,9 @@
 	section:last-of-type {
 		@apply mb-24 md:mb-[184px];
 	}
+	footer > * {
+		@apply mx-auto max-w-6xl px-6;
+	}
 }
 
 @layer components {

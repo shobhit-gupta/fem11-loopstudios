@@ -63,13 +63,8 @@
 	<!-- Translucent overlay -->
 	<div
 		class="
-			absolute
-			bottom-0
-			left-0
-			right-0
-			top-0
-			z-0
-		bg-black/40
+			overlay
+			bg-black/40
 		"
 	/>
 	<!-- Container flex -->
@@ -174,13 +169,11 @@
 			class="
 				bg-white
 				px-6
-				text-center
 				md:col-start-2
 				md:col-end-4
 				md:row-start-1
 				md:pl-8
 				md:pt-8
-				md:text-left
 				lg:pl-24
 				lg:pt-24
 			"
@@ -188,6 +181,7 @@
 			<h2 class="section-title">The leader in interactive VR</h2>
 			<p
 				class="
+					text-center-md-left
 					mt-4
 					text-darkGray
 					md:mt-6
@@ -214,9 +208,7 @@
 		class="
 			section-title
 			mb-6
-			text-center
 			md:col-span-3
-			md:text-left
 		"
 	>
 		Our Creations
@@ -231,12 +223,7 @@
 			<!-- Translucent overlay -->
 			<div
 				class="
-					absolute
-					bottom-0
-					left-0
-					right-0
-					top-0
-					z-0
+					overlay
 					bg-gradient-to-b
 					from-black/0
 					to-black/60
@@ -245,11 +232,9 @@
 			<h3
 				class="
 					project-title
-					max-w-
 					absolute
+					inset-x-0
 					bottom-0
-					left-0
-					right-0
 					whitespace-pre
 					px-5
 					py-5

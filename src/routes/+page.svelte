@@ -1,3 +1,40 @@
+<script>
+	const portfolio = [
+		{
+			title: 'Deep\nEarth',
+			image: 'deep-earth'
+		},
+		{
+			title: 'Night\nArcade',
+			image: 'night-arcade'
+		},
+		{
+			title: 'Soccer\nTeam VR',
+			image: 'soccer-team'
+		},
+		{
+			title: 'The\ngrid',
+			image: 'grid'
+		},
+		{
+			title: 'From Up\nAbove VR',
+			image: 'from-above'
+		},
+		{
+			title: 'Pocket\nBorealis',
+			image: 'pocket-borealis'
+		},
+		{
+			title: 'The\nCuriosity',
+			image: 'curiosity'
+		},
+		{
+			title: 'Make it\nFisheye',
+			image: 'fisheye'
+		}
+	];
+</script>
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -26,13 +63,8 @@
 	<!-- Translucent overlay -->
 	<div
 		class="
-			absolute
-			bottom-0
-			left-0
-			right-0
-			top-0
-			z-0
-		bg-black/40
+			overlay
+			bg-black/40
 		"
 	/>
 	<!-- Container flex -->
@@ -102,7 +134,6 @@
 				p-6
 				text-white
 				md:p-10
-				md:text-7xl
 			"
 		>
 			Immersive experiences that deliver
@@ -138,13 +169,11 @@
 			class="
 				bg-white
 				px-6
-				text-center
 				md:col-start-2
 				md:col-end-4
 				md:row-start-1
 				md:pl-8
 				md:pt-8
-				md:text-left
 				lg:pl-24
 				lg:pt-24
 			"
@@ -152,6 +181,7 @@
 			<h2 class="section-title">The leader in interactive VR</h2>
 			<p
 				class="
+					text-center-md-left
 					mt-4
 					text-darkGray
 					md:mt-6
@@ -165,18 +195,81 @@
 	</div>
 </section>
 
-<!-- Our creations -->
+<section
+	class="
+		grid
+		grid-cols-1
+		gap-6
+		md:grid-cols-4
+		md:gap-[30px]
+	"
+>
+	<h2
+		class="
+			section-title
+			mb-6
+			md:col-span-3
+		"
+	>
+		Our Creations
+	</h2>
 
-<!-- See all -->
+	{#each portfolio as { title, image }}
+		<article class="relative order-2 md:order-3">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
+				<img src="/images/mobile/image-{image}.jpg" alt="" class="w-full" />
+			</picture>
+			<!-- Translucent overlay -->
+			<div
+				class="
+					overlay
+					bg-gradient-to-b
+					from-black/0
+					to-black/60
+				"
+			/>
+			<h3
+				class="
+					project-title
+					absolute
+					inset-x-0
+					bottom-0
+					whitespace-pre
+					px-5
+					py-5
+					text-white
+					md:py-8
+					lg:pl-10
+				"
+			>
+				{title}
+			</h3>
+		</article>
+	{/each}
 
-<!-- Deep earth -->
-<!-- Night arcade -->
-<!-- Soccer team VR -->
-<!-- The grid -->
-<!-- From up above VR -->
-<!-- Pocket borealis -->
-<!-- The curiosity -->
-<!-- Make it fisheye -->
+	<button
+		class="
+			order-3
+			mt-2.5
+			max-w-fit
+			justify-self-center
+			border
+			border-veryDarkGray
+			px-10
+			py-3
+			text-sm
+			uppercase
+			tracking-[5px]
+			md:order-2
+			md:mb-11
+			md:mt-1
+			md:justify-self-end
+		"
+	>
+		See All
+	</button>
+</section>
 
 <!-- About -->
 <!-- Careers -->

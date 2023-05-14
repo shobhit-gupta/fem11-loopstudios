@@ -9,13 +9,25 @@
 	section {
 		@apply mx-auto mt-24 max-w-6xl px-6 md:mt-[184px];
 	}
+	section:last-of-type {
+		@apply mb-24 md:mb-[184px];
+	}
 }
 
 @layer components {
+	.text-center-md-left {
+		@apply text-center md:text-left;
+	}
 	.page-title {
-		@apply font-display text-[40px] font-light uppercase;
+		@apply font-display text-[40px] font-light uppercase md:text-7xl;
 	}
 	.section-title {
-		@apply font-display text-[32px] font-light uppercase leading-tight lg:text-5xl;
+		@apply text-center-md-left font-display text-[32px] font-light uppercase leading-tight lg:text-5xl;
+	}
+	.project-title {
+		@apply font-display text-2xl font-light uppercase leading-tight lg:text-[32px];
+	}
+	.overlay {
+		@apply absolute inset-0;
 	}
 }

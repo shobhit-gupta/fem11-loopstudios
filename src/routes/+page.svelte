@@ -215,7 +215,7 @@
 	</h2>
 
 	{#each portfolio as { title, image }}
-		<div class="relative order-2 md:order-3">
+		<article class="relative order-2 md:order-3">
 			<picture>
 				<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
 				<img src="/images/mobile/image-{image}.jpg" alt="" class="w-full" />
@@ -245,7 +245,7 @@
 			>
 				{title}
 			</h3>
-		</div>
+		</article>
 	{/each}
 
 	<button

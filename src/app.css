@@ -9,6 +9,9 @@
 	section {
 		@apply mx-auto mt-24 max-w-6xl px-6 md:mt-[184px];
 	}
+	header section {
+		@apply mt-0 pt-10 md:pt-16;
+	}
 	section:last-of-type {
 		@apply mb-24 md:mb-[184px];
 	}

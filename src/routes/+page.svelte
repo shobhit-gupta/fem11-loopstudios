@@ -53,11 +53,8 @@
 		bg-cover
 		bg-center
 		bg-no-repeat
-		px-6
-		pt-10
 		md:bg-[url('/images/desktop/image-hero.jpg')]
 		md:bg-top
-		md:pt-16
 	"
 >
 	<!-- Translucent overlay -->
@@ -68,12 +65,10 @@
 		"
 	/>
 	<!-- Container flex -->
-	<div
+	<section
 		class="
 			relative
-			mx-auto
 			flex
-			max-w-6xl
 			flex-col
 			items-start
 			gap-40
@@ -138,7 +133,7 @@
 		>
 			Immersive experiences that deliver
 		</h1>
-	</div>
+	</section>
 </header>
 
 <section>

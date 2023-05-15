@@ -53,11 +53,8 @@
 		bg-cover
 		bg-center
 		bg-no-repeat
-		px-6
-		pt-10
 		md:bg-[url('/images/desktop/image-hero.jpg')]
 		md:bg-top
-		md:pt-16
 	"
 >
 	<!-- Translucent overlay -->
@@ -68,12 +65,10 @@
 		"
 	/>
 	<!-- Container flex -->
-	<div
+	<section
 		class="
 			relative
-			mx-auto
 			flex
-			max-w-6xl
 			flex-col
 			items-start
 			gap-40
@@ -81,49 +76,17 @@
 		"
 	>
 		<!-- Navigation -->
-		<div
-			class="
-				flex
-				w-full
-				justify-between
-			"
-		>
-			<img
-				src="/images/logo.svg"
-				alt=""
-				class="
-					w-36
-					grow-0
-					md:w-48
-				"
-			/>
-			<div
-				class="
-					hidden
-					md:block
-
-				"
-			>
-				<nav
-					class="
-						flex
-						h-full
-						w-96
-						flex-row
-						items-center
-						justify-between
-						leading-relaxed
-						text-white
-					"
-				>
-					<a href="/">About</a>
-					<a href="/">Careers</a>
-					<a href="/">Events</a>
-					<a href="/">Products</a>
-					<a href="/">Support</a>
-				</nav>
-			</div>
+		<div class="nav-wrapper">
+			<img src="/images/logo.svg" alt="" class="logo" />
+			<nav>
+				<a href="/">About</a>
+				<a href="/">Careers</a>
+				<a href="/">Events</a>
+				<a href="/">Products</a>
+				<a href="/">Support</a>
+			</nav>
 		</div>
+
 		<!-- Page Heading -->
 		<h1
 			class="
@@ -138,7 +101,7 @@
 		>
 			Immersive experiences that deliver
 		</h1>
-	</div>
+	</section>
 </header>
 
 <section>
@@ -271,10 +234,83 @@
 	</button>
 </section>
 
-<!-- About -->
-<!-- Careers -->
-<!-- Events -->
-<!-- Products -->
-<!-- Support -->
+<footer
+	class="
+		bg-black
+		py-14
+		md:py-11
+	"
+>
+	<div
+		class="
+			flex
+			flex-col
+			items-center
+			justify-between
+			gap-12
+			text-white
+			md:flex-row
+		"
+	>
+		<!-- Navigation -->
+		<div class="nav-wrapper">
+			<img src="/images/logo.svg" alt="" class="logo" />
+			<nav>
+				<a href="/">About</a>
+				<a href="/">Careers</a>
+				<a href="/">Events</a>
+				<a href="/">Products</a>
+				<a href="/">Support</a>
+			</nav>
+		</div>
+		<div
+			class="
+				flex
+				flex-col
+				items-center
+				gap-4
+				md:items-end
+				md:gap-6
+			"
+		>
+			<div
+				class="
+					flex
+					space-x-4
+				"
+			>
+				<img src="/images/icon-facebook.svg" alt="" />
+				<img src="/images/icon-twitter.svg" alt="" />
+				<img src="/images/icon-pinterest.svg" alt="" />
+				<img src="/images/icon-instagram.svg" alt="" />
+			</div>
+			<p class="text-darkGray">© 2021 Loopstudios. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
 
-<!-- © 2021 Loopstudios. All rights reserved. -->
+<style lang="postcss">
+	header .nav-wrapper {
+		@apply flex w-full justify-between;
+	}
+
+	header .logo {
+		@apply w-36 grow-0 md:w-48;
+	}
+
+	header nav {
+		@apply hidden h-full w-96 flex-row items-center justify-between leading-relaxed text-white md:flex;
+	}
+
+	footer .nav-wrapper {
+		@apply flex flex-col items-center gap-8 md:items-start md:gap-6;
+	}
+
+	footer .logo {
+		@apply w-36 grow-0;
+	}
+
+	footer nav {
+		@apply flex h-full flex-col items-center gap-4 leading-relaxed text-white md:w-96 md:flex-row md:gap-8;
+	}
+</style>

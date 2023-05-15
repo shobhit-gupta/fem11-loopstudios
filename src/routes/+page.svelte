@@ -76,49 +76,17 @@
 		"
 	>
 		<!-- Navigation -->
-		<div
-			class="
-				flex
-				w-full
-				justify-between
-			"
-		>
-			<img
-				src="/images/logo.svg"
-				alt=""
-				class="
-					w-36
-					grow-0
-					md:w-48
-				"
-			/>
-			<div
-				class="
-					hidden
-					md:block
-
-				"
-			>
-				<nav
-					class="
-						flex
-						h-full
-						w-96
-						flex-row
-						items-center
-						justify-between
-						leading-relaxed
-						text-white
-					"
-				>
-					<a href="/">About</a>
-					<a href="/">Careers</a>
-					<a href="/">Events</a>
-					<a href="/">Products</a>
-					<a href="/">Support</a>
-				</nav>
-			</div>
+		<div class="nav-wrapper">
+			<img src="/images/logo.svg" alt="" class="logo" />
+			<nav>
+				<a href="/">About</a>
+				<a href="/">Careers</a>
+				<a href="/">Events</a>
+				<a href="/">Products</a>
+				<a href="/">Support</a>
+			</nav>
 		</div>
+
 		<!-- Page Heading -->
 		<h1
 			class="
@@ -285,49 +253,32 @@
 		"
 	>
 		<!-- Navigation -->
+		<div class="nav-wrapper">
+			<img src="/images/logo.svg" alt="" class="logo" />
+			<nav>
+				<a href="/">About</a>
+				<a href="/">Careers</a>
+				<a href="/">Events</a>
+				<a href="/">Products</a>
+				<a href="/">Support</a>
+			</nav>
+		</div>
 		<div
 			class="
 				flex
 				flex-col
 				items-center
-				gap-8
-				md:items-start
+				gap-4
+				md:items-end
 				md:gap-6
 			"
 		>
-			<img
-				src="/images/logo.svg"
-				alt=""
+			<div
 				class="
-					w-36
-					grow-0
+					flex
+					space-x-4
 				"
-			/>
-			<div class="">
-				<nav
-					class="
-						flex
-						h-full
-						flex-col
-						items-center
-						gap-4
-						leading-relaxed
-						text-white
-						md:w-96
-						md:flex-row
-						md:gap-8
-					"
-				>
-					<a href="/">About</a>
-					<a href="/">Careers</a>
-					<a href="/">Events</a>
-					<a href="/">Products</a>
-					<a href="/">Support</a>
-				</nav>
-			</div>
-		</div>
-		<div class="flex flex-col items-center gap-4 md:items-end md:gap-6">
-			<div class="flex space-x-4">
+			>
 				<img src="/images/icon-facebook.svg" alt="" />
 				<img src="/images/icon-twitter.svg" alt="" />
 				<img src="/images/icon-pinterest.svg" alt="" />
@@ -337,3 +288,29 @@
 		</div>
 	</div>
 </footer>
+
+<style lang="postcss">
+	header .nav-wrapper {
+		@apply flex w-full justify-between;
+	}
+
+	header .logo {
+		@apply w-36 grow-0 md:w-48;
+	}
+
+	header nav {
+		@apply hidden h-full w-96 flex-row items-center justify-between leading-relaxed text-white md:flex;
+	}
+
+	footer .nav-wrapper {
+		@apply flex flex-col items-center gap-8 md:items-start md:gap-6;
+	}
+
+	footer .logo {
+		@apply w-36 grow-0;
+	}
+
+	footer nav {
+		@apply flex h-full flex-col items-center gap-4 leading-relaxed text-white md:w-96 md:flex-row md:gap-8;
+	}
+</style>

@@ -88,4 +88,9 @@
 	header input:checked ~ .nav-wrapper nav {
 		@apply nav--menu-open md:nav--menu-closed;
 	}
+
+	/* Prevent checked-checkbox to scroll up */
+	.hamburger-checkbox:checked {
+		@apply fixed;
+	}
 }

@@ -75,7 +75,23 @@
 			md:gap-32
 		"
 	>
-		<input type="checkbox" class="hamburger-checkbox absolute right-6 top-11 z-50 md:hidden" />
+		<input type="checkbox" class="hamburger-checkbox hidden" id="hamburger-checkbox" />
+		<label
+			for="hamburger-checkbox"
+			class="
+				absolute
+				right-6
+				top-11
+				z-50
+				h-11
+				w-11
+				bg-[url('images/icon-hamburger.svg')]
+				bg-top
+				bg-no-repeat
+				md:hidden
+			"
+		/>
+
 		<!-- Navigation -->
 		<div class="nav-wrapper">
 			<img src="/images/logo.svg" alt="" class="logo" />

@@ -89,8 +89,9 @@
 		@apply nav--menu-open md:nav--menu-closed;
 	}
 
-	/* Prevent checked-checkbox to scroll up */
-	.hamburger-checkbox:checked {
+	.hamburger-checkbox:checked ~ label {
+		/* Prevent checked-checkbox to scroll up */
 		@apply fixed;
+		@apply bg-[url('/images/icon-close.svg')];
 	}
 }

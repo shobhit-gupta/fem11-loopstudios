@@ -75,6 +75,7 @@
 			md:gap-32
 		"
 	>
+		<input type="checkbox" class="hamburger-checkbox absolute right-6 top-11 z-50 md:hidden" />
 		<!-- Navigation -->
 		<div class="nav-wrapper">
 			<img src="/images/logo.svg" alt="" class="logo" />
@@ -290,27 +291,4 @@
 </footer>
 
 <style lang="postcss">
-	header .nav-wrapper {
-		@apply flex w-full justify-between;
-	}
-
-	header .logo {
-		@apply w-36 grow-0 md:w-48;
-	}
-
-	header nav {
-		@apply hidden h-full w-96 flex-row items-center justify-between leading-relaxed text-white md:flex;
-	}
-
-	footer .nav-wrapper {
-		@apply flex flex-col items-center gap-8 md:items-start md:gap-6;
-	}
-
-	footer .logo {
-		@apply w-36 grow-0;
-	}
-
-	footer nav {
-		@apply flex h-full flex-col items-center gap-4 leading-relaxed text-white md:w-96 md:flex-row md:gap-8;
-	}
 </style>

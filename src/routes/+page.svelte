@@ -217,6 +217,8 @@
 			text-sm
 			uppercase
 			tracking-[5px]
+			hover:bg-black
+			hover:text-white
 			md:order-2
 			md:mb-11
 			md:mt-1

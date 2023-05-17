@@ -171,14 +171,20 @@
 	</h2>
 
 	{#each portfolio as { title, image }}
-		<article class="group relative order-2 cursor-pointer md:order-3">
+		<article class="group relative order-2 cursor-pointer overflow-hidden md:order-3">
 			<picture>
 				<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
-				<img src="/images/mobile/image-{image}.jpg" alt="" class="w-full" />
+				<img
+					src="/images/mobile/image-{image}.jpg"
+					alt=""
+					class="w-full duration-300 group-hover:scale-110 group-active:scale-110"
+				/>
 			</picture>
 			<!-- Translucent overlay -->
 			<div class="overlay bg-gradient-to-b from-black/0 to-black/60" />
-			<div class="overlay bg-transparent group-hover:bg-white/75 group-active:bg-white/75" />
+			<div
+				class="overlay bg-transparent duration-200 group-hover:bg-white/75 group-active:bg-white/75"
+			/>
 			<h3
 				class="
 					project-title
@@ -189,7 +195,10 @@
 					px-5
 					py-5
 					text-white
+					duration-200
+					group-hover:scale-110
 					group-hover:text-black
+					group-active:scale-105
 					group-active:text-black
 					md:py-8
 					lg:pl-10
@@ -213,6 +222,7 @@
 			text-sm
 			uppercase
 			tracking-[5px]
+			duration-200
 			hover:bg-black
 			hover:text-white
 			active:bg-black

@@ -171,20 +171,14 @@
 	</h2>
 
 	{#each portfolio as { title, image }}
-		<article class="relative order-2 md:order-3">
+		<article class="group relative order-2 cursor-pointer md:order-3">
 			<picture>
 				<source media="(min-width: 768px)" srcset="/images/desktop/image-{image}.jpg" />
 				<img src="/images/mobile/image-{image}.jpg" alt="" class="w-full" />
 			</picture>
 			<!-- Translucent overlay -->
-			<div
-				class="
-					overlay
-					bg-gradient-to-b
-					from-black/0
-					to-black/60
-				"
-			/>
+			<div class="overlay bg-gradient-to-b from-black/0 to-black/60" />
+			<div class="overlay bg-transparent group-hover:bg-white/75 group-active:bg-white/75" />
 			<h3
 				class="
 					project-title
@@ -195,6 +189,8 @@
 					px-5
 					py-5
 					text-white
+					group-hover:text-black
+					group-active:text-black
 					md:py-8
 					lg:pl-10
 				"
@@ -217,6 +213,10 @@
 			text-sm
 			uppercase
 			tracking-[5px]
+			hover:bg-black
+			hover:text-white
+			active:bg-black
+			active:text-white
 			md:order-2
 			md:mb-11
 			md:mt-1
@@ -263,10 +263,10 @@
 					space-x-4
 				"
 			>
-				<img src="/images/icon-facebook.svg" alt="" />
-				<img src="/images/icon-twitter.svg" alt="" />
-				<img src="/images/icon-pinterest.svg" alt="" />
-				<img src="/images/icon-instagram.svg" alt="" />
+				<a href="/" class="hoverline"><img src="/images/icon-facebook.svg" alt="" /></a>
+				<a href="/" class="hoverline"><img src="/images/icon-twitter.svg" alt="" /></a>
+				<a href="/" class="hoverline"><img src="/images/icon-pinterest.svg" alt="" /></a>
+				<a href="/" class="hoverline"><img src="/images/icon-instagram.svg" alt="" /></a>
 			</div>
 			<p class="text-darkGray">© 2021 Loopstudios. All rights reserved.</p>
 		</div>

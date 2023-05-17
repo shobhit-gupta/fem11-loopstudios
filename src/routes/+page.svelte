@@ -1,4 +1,6 @@
 <script>
+	import Navigation from '$lib/UI/Navigation.svelte';
+
 	const portfolio = [
 		{
 			title: 'Deep\nEarth',
@@ -75,34 +77,8 @@
 			md:gap-32
 		"
 	>
-		<input type="checkbox" class="hamburger-checkbox hidden" id="hamburger-checkbox" />
-		<label
-			for="hamburger-checkbox"
-			class="
-				absolute
-				right-6
-				top-11
-				z-50
-				h-11
-				w-11
-				bg-[url('images/icon-hamburger.svg')]
-				bg-top
-				bg-no-repeat
-				md:hidden
-			"
-		/>
-
 		<!-- Navigation -->
-		<div class="nav-wrapper">
-			<img src="/images/logo.svg" alt="" class="logo" />
-			<nav>
-				<a href="/">About</a>
-				<a href="/">Careers</a>
-				<a href="/">Events</a>
-				<a href="/">Products</a>
-				<a href="/">Support</a>
-			</nav>
-		</div>
+		<Navigation withHamburgerMenu />
 
 		<!-- Page Heading -->
 		<h1
@@ -270,16 +246,7 @@
 		"
 	>
 		<!-- Navigation -->
-		<div class="nav-wrapper">
-			<img src="/images/logo.svg" alt="" class="logo" />
-			<nav>
-				<a href="/">About</a>
-				<a href="/">Careers</a>
-				<a href="/">Events</a>
-				<a href="/">Products</a>
-				<a href="/">Support</a>
-			</nav>
-		</div>
+		<Navigation />
 		<div
 			class="
 				flex
@@ -305,6 +272,3 @@
 		</div>
 	</div>
 </footer>
-
-<style lang="postcss">
-</style>

@@ -54,7 +54,7 @@
 	}
 
 	.nav--menu-closed {
-		@apply hidden h-full w-96 flex-row items-center justify-between gap-0 font-sans text-[15px] font-normal capitalize leading-relaxed text-white md:flex;
+		@apply hidden h-full flex-row items-center gap-8 font-sans text-[15px] font-normal capitalize leading-relaxed text-white md:flex;
 	}
 
 	header .nav-wrapper {
@@ -90,7 +90,6 @@
 	}
 
 	.hamburger-checkbox:checked ~ label {
-		/* Prevent checked-checkbox to scroll up */
 		@apply fixed;
 		@apply bg-[url('/images/icon-close.svg')];
 	}

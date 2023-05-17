@@ -13,6 +13,7 @@
       z-50
       h-11
       w-11
+      cursor-pointer
       bg-[url('/images/icon-hamburger.svg')]
       bg-top
       bg-no-repeat

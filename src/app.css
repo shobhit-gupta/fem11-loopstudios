@@ -94,3 +94,12 @@
 		@apply bg-[url('/images/icon-close.svg')];
 	}
 }
+
+@layer utilities {
+	.hoverline {
+		@apply relative;
+	}
+	.hoverline::after {
+		@apply absolute -bottom-2 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-white duration-200 content-[''] hover:w-full;
+	}
+}

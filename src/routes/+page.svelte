@@ -263,10 +263,10 @@
 					space-x-4
 				"
 			>
-				<img src="/images/icon-facebook.svg" alt="" />
-				<img src="/images/icon-twitter.svg" alt="" />
-				<img src="/images/icon-pinterest.svg" alt="" />
-				<img src="/images/icon-instagram.svg" alt="" />
+				<a href="/" class="hoverline"><img src="/images/icon-facebook.svg" alt="" /></a>
+				<a href="/" class="hoverline"><img src="/images/icon-twitter.svg" alt="" /></a>
+				<a href="/" class="hoverline"><img src="/images/icon-pinterest.svg" alt="" /></a>
+				<a href="/" class="hoverline"><img src="/images/icon-instagram.svg" alt="" /></a>
 			</div>
 			<p class="text-darkGray">© 2021 Loopstudios. All rights reserved.</p>
 		</div>

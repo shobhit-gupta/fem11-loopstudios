@@ -25,11 +25,11 @@
 	<img src="/images/logo.svg" alt="" class="logo" />
 	<nav>
 		<slot>
-			<a href="/">About</a>
-			<a href="/">Careers</a>
-			<a href="/">Events</a>
-			<a href="/">Products</a>
-			<a href="/">Support</a>
+			<a href="/" class="hoverline">About</a>
+			<a href="/" class="hoverline">Careers</a>
+			<a href="/" class="hoverline">Events</a>
+			<a href="/" class="hoverline">Products</a>
+			<a href="/" class="hoverline">Support</a>
 		</slot>
 	</nav>
 </div>

@@ -24,16 +24,73 @@
 	.text-center-md-left {
 		@apply text-center md:text-left;
 	}
+
 	.page-title {
 		@apply font-display text-[40px] font-light uppercase md:text-7xl;
 	}
+
 	.section-title {
 		@apply text-center-md-left font-display text-[32px] font-light uppercase leading-tight lg:text-5xl;
 	}
+
 	.project-title {
 		@apply font-display text-2xl font-light uppercase leading-tight lg:text-[32px];
 	}
+
 	.overlay {
 		@apply absolute inset-0;
+	}
+
+	.nav_wrapper--menu-open {
+		@apply fixed inset-0 z-10 flex flex-wrap items-start justify-between overflow-y-hidden bg-black px-6 py-10;
+	}
+
+	.nav_wrapper--menu-closed {
+		@apply static inset-auto z-auto flex w-full flex-nowrap items-stretch justify-between overflow-y-auto bg-transparent p-0;
+	}
+
+	.nav--menu-open {
+		@apply flex h-full w-full flex-col items-start justify-center gap-6 font-display text-2xl font-light uppercase leading-tight text-white;
+	}
+
+	.nav--menu-closed {
+		@apply hidden h-full flex-row items-center gap-8 font-sans text-[15px] font-normal capitalize leading-relaxed text-white md:flex;
+	}
+
+	header .nav-wrapper {
+		@apply nav_wrapper--menu-closed;
+	}
+
+	header .logo {
+		@apply w-36 shrink-0 grow-0 md:w-48;
+	}
+
+	header nav {
+		@apply nav--menu-closed;
+	}
+
+	footer .nav-wrapper {
+		@apply flex flex-col items-center gap-8 md:items-start md:gap-6;
+	}
+
+	footer .logo {
+		@apply w-36 grow-0;
+	}
+
+	footer nav {
+		@apply flex h-full flex-col items-center gap-4 leading-relaxed text-white md:w-96 md:flex-row md:gap-8;
+	}
+
+	header input:checked ~ .nav-wrapper {
+		@apply nav_wrapper--menu-open md:nav_wrapper--menu-closed;
+	}
+
+	header input:checked ~ .nav-wrapper nav {
+		@apply nav--menu-open md:nav--menu-closed;
+	}
+
+	.hamburger-checkbox:checked ~ label {
+		@apply fixed;
+		@apply bg-[url('/images/icon-close.svg')];
 	}
 }

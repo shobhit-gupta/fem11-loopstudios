@@ -198,7 +198,7 @@
 					py-5
 					text-white
 					duration-200
-					group-hover:scale-110
+					group-hover:scale-105
 					group-hover:text-black
 					group-active:scale-105
 					group-active:text-black

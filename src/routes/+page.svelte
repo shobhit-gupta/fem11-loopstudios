@@ -1,4 +1,6 @@
 <script>
+	import Button from '$lib/UI/Button.svelte';
+
 	import Navigation from '$lib/UI/Navigation.svelte';
 
 	const portfolio = [
@@ -209,32 +211,20 @@
 		</article>
 	{/each}
 
-	<button
+	<div
 		class="
 			order-3
 			mt-2.5
 			max-w-fit
 			justify-self-center
-			border
-			border-veryDarkGray
-			px-10
-			py-3
-			text-sm
-			uppercase
-			tracking-[5px]
-			duration-200
-			hover:bg-black
-			hover:text-white
-			active:bg-black
-			active:text-white
 			md:order-2
 			md:mb-11
 			md:mt-1
 			md:justify-self-end
 		"
 	>
-		See All
-	</button>
+		<Button>See All</Button>
+	</div>
 </section>
 
 <footer
